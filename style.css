@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal', sans-serif;
+}
+
+body {
+    background-color: #f7f5f2;
+    color: #2c2c2c;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #2b2622;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+
+.nav-icons-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    background-color: #2b2622;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+.hero-bg-text {
+    font-size: 15vw;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.03);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    pointer-events: none;
+    letter-spacing: 10px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 40px 20px;
+}
+
+.hero-image-box {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    background: #3b332e;
+}
+
+.hero-image-box img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.hero-text-overlay {
+    padding: 20px;
+}
+
+.hero-text-overlay h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.hero-text-overlay p {
+    font-size: 13px;
+    color: #bbb;
+}
+
+/* Trust Strip */
+.trust-strip {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 255, 255, 0.07);
+    margin: 0 40px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 13px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.trust-strip small {
+    color: #aaa;
+    font-size: 11px;
+}
+
+/* Categories Section */
+.categories {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cat-title h3 {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.cat-title h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #222;
+}
+
+.cat-title p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.cat-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cat-item {
+    background: #fff;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.cat-item:hover {
+    transform: translateY(-5px);
+}
+
+.cat-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.cat-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background: #1a1715;
+    color: #888;
+    text-align: center;
+    padding: 25px;
+    font-size: 12px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 20px;
+    }
+    .nav-links {
+        display: none; /* Mobile par clean look ke liye menu hide (hamburger menu ban sakta hai baad mein) */
+    }
+    .trust-strip {
+        flex-direction: column;
+        gap: 15px;
+        margin: 0 20px;
+    }
+    .cat-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat-item {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
