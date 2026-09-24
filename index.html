@@ -5,81 +5,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RORJAN | روزان - Luxury Fashion & Beauty Saudi Arabia</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Header Section -->
     <header class="navbar">
-        <div class="nav-icons-right">
-            <a href="#">🔍</a>
-            <a href="#">👤</a>
-            <a href="#">🤍</a>
-            <a href="#">🛒</a>
-        </div>
-        <nav class="nav-links">
-            <a href="#">ABOUT</a>
-            <a href="#">COLLECTIONS</a>
-            <a href="#">NEW ARRIVALS</a>
-            <a href="#">SHOP</a>
-            <a href="#">HOME</a>
-        </nav>
         <div class="logo">RORJAN</div>
+        <nav class="nav-links">
+            <a href="#home">HOME</a>
+            <a href="#categories">COLLECTIONS</a>
+            <a href="#trending">SHOP</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+        <div class="nav-icons">
+            <a href="#" id="search-btn">🔍</a>
+            <a href="#" id="wishlist-btn">🤍</a>
+            <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+        </div>
     </header>
 
-    <!-- Hero Section with Big Typography -->
-    <section class="hero">
-        <div class="hero-bg-text">STYLE</div>
-        <div class="hero-content">
-            <div class="hero-image-box">
-                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Model">
-                <div class="hero-text-overlay">
-                    <h2>Elegance Redefined</h2>
-                    <p>Style is a way to say who you are without speaking.</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-zara">
+        <div class="hero-bg-brand">RORJAN</div>
+        <div class="hero-container">
+            <div class="hero-text-left">
+                <span class="sub-tag">SAUDI LUXURY COLLECTION <br> AUTUMN WINTER 2026</span>
+                <ul class="features-list">
+                    <li>✨ EXCLUSIVE MODEST FASHION</li>
+                    <li>🇸🇦 EXPRESS SHIPPING ACROSS KSA</li>
+                    <li>🔒 SECURE CHECKOUT</li>
+                </ul>
+                <div class="hero-main-title">
+                    <h2>MODERN<br>ELEGANCE</h2>
+                    <p>Tailored for those who define absolute luxury.</p>
+                </div>
+                <a href="#categories" class="shop-btn">EXPLORE NOW → <br><small>Discover latest drops</small></a>
+            </div>
+            <div class="hero-image-center">
+                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" alt="RORJAN Model">
+            </div>
+            <div class="hero-side-info">
+                <span>RORJAN KSA 2026</span>
+            </div>
+        </div>
+        <div class="hero-bottom-bar">
+            <span>MADA SUPPORTED</span>
+            <span>|</span>
+            <span>TABBY & TAMARA</span>
+            <span>|</span>
+            <span>APPLE PAY</span>
+            <div class="starting-price">STARTING FROM <br><strong>250 SAR</strong></div>
+        </div>
+    </section>
+
+    <!-- Interactive Zig-Zag Categories Section -->
+    <section id="categories" class="categories-section">
+        <div class="cat-main-title">
+            <h3>— CURATED COLLECTIONS —</h3>
+            <h2>Explore Our Categories</h2>
+            <p>Click any category to view exclusive high-end selections.</p>
+        </div>
+
+        <!-- Category 1: Women (Image Left, Text Right) -->
+        <div class="category-row">
+            <a href="#women-products" class="cat-img-box">
+                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Women Abayas">
+            </a>
+            <div class="cat-desc-box">
+                <span class="cat-number">01</span>
+                <h3>Women Luxury Abayas & Wear</h3>
+                <p>Discover breathtaking modest couture crafted with premium fabrics, designed for the modern Saudi woman who values elegance and grace.</p>
+                <a href="#women-products" class="explore-link">Shop Women Collection →</a>
+            </div>
+        </div>
+
+        <!-- Category 2: Men (Text Left, Image Right) -->
+        <div class="category-row reverse">
+            <div class="cat-desc-box">
+                <span class="cat-number">02</span>
+                <h3>Men's Elite Collection</h3>
+                <p>Sophisticated tailoring, premium thobes, and executive wear curated to offer distinction and unmatched comfort for every occasion.</p>
+                <a href="#men-products" class="explore-link">Shop Men Collection →</a>
+            </div>
+            <a href="#men-products" class="cat-img-box">
+                <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Men Collection">
+            </a>
+        </div>
+
+        <!-- Category 3: Accessories (Image Left, Text Right) -->
+        <div class="category-row">
+            <a href="#acc-products" class="cat-img-box">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Accessories">
+            </a>
+            <div class="cat-desc-box">
+                <span class="cat-number">03</span>
+                <h3>Exquisite Accessories & Oud</h3>
+                <p>Signature oriental perfumes, luxury leather bags, and statement pieces that complete your high-end look with a touch of heritage.</p>
+                <a href="#acc-products" class="explore-link">Shop Accessories →</a>
+            </div>
+        </div>
+
+        <!-- Category 4: Footwear (Text Left, Image Right) -->
+        <div class="category-row reverse">
+            <div class="cat-desc-box">
+                <span class="cat-number">04</span>
+                <h3>Designer Footwear</h3>
+                <p>Step out in absolute confidence. Handcrafted heels, classic flats, and executive shoes designed for ultimate style and poise.</p>
+                <a href="#footwear-products" class="explore-link">Shop Footwear →</a>
+            </div>
+            <a href="#footwear-products" class="cat-img-box">
+                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="Footwear">
+            </a>
+        </div>
+    </section>
+
+    <!-- Trending Products Section with Add to Cart Functionality -->
+    <section id="trending" class="trending-section">
+        <div class="cat-main-title">
+            <h3>— FEATURED ITEMS —</h3>
+            <h2>Trending Now in Saudi Arabia</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="prod-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Royal Abaya">
+                </div>
+                <h4>Royal Embroidered Abaya</h4>
+                <p class="price">750 SAR</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Royal Embroidered Abaya', 750)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="prod-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=500&q=80" alt="Oud Perfume">
+                </div>
+                <h4>Signature Royal Oud</h4>
+                <p class="price">490 SAR</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Signature Royal Oud', 490)">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="prod-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=500&q=80" alt="Evening Dress">
+                </div>
+                <h4>Luxury Evening Gown</h4>
+                <p class="price">990 SAR</p>
+                <button class="add-to-cart-btn" onclick="addToCart('Luxury Evening Gown', 990)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter & Contact Section -->
+    <section id="contact" class="newsletter-section">
+        <div class="newsletter-box">
+            <h3>Connect with RORJAN</h3>
+            <p>Join our private list to receive early access to new collections and exclusive offers.</p>
+            <form onsubmit="handleSubscribe(event)">
+                <input type="email" id="user-email" placeholder="Enter your email address..." required>
+                <button type="submit">Subscribe / Connect</button>
+            </form>
+            <div id="sub-success" style="display:none; color: #b8860b; margin-top: 10px; font-size: 13px;">Thank you for connecting with RORJAN!</div>
+        </div>
+    </section>
+
+    <!-- Footer with Policies & Payment Gateways -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>RORJAN KSA</h4>
+                <p>The ultimate destination for luxury fashion and beauty in Saudi Arabia.</p>
+                <p>Email: support@rorjan.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact Support</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer-col">
+                <h4>Secure Payments & Local Gateways</h4>
+                <div class="payment-badges">
+                    <span>Mada</span>
+                    <span>Apple Pay</span>
+                    <span>Tabby</span>
+                    <span>Tamara</span>
+                    <span>Visa</span>
+                    <span>Mastercard</span>
+                    <span>PayPal</span>
                 </div>
             </div>
         </div>
-        <!-- Trust Badges Strip -->
-        <div class="trust-strip">
-            <div>🚚 Free Shipping <br><small>On Orders Above 300 SAR</small></div>
-            <div>🔒 Secure Payment <br><small>100% Safe & Encrypted</small></div>
-            <div>✨ Trendy Collections <br><small>New Styles Weekly</small></div>
-            <div>💬 24/7 Support <br><small>We're Here For You</small></div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 RORJAN Saudi Arabia. All Rights Reserved.</p>
         </div>
-    </section>
-
-    <!-- Shop by Category Section -->
-    <section class="categories">
-        <div class="cat-title">
-            <h3>— SHOP BY CATEGORY —</h3>
-            <h2>Find Your Perfect Style</h2>
-            <p>Curated collections for every mood, moment and occasion.</p>
-        </div>
-        <div class="cat-grid">
-            <div class="cat-item">
-                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=400&q=80" alt="Women">
-                <div class="cat-footer"><span>Women</span> <span>→</span></div>
-            </div>
-            <div class="cat-item">
-                <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=400&q=80" alt="Men">
-                <div class="cat-footer"><span>Men</span> <span>→</span></div>
-            </div>
-            <div class="cat-item">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80" alt="Accessories">
-                <div class="cat-footer"><span>Accessories</span> <span>→</span></div>
-            </div>
-            <div class="cat-item">
-                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=400&q=80" alt="Footwear">
-                <div class="cat-footer"><span>Footwear</span> <span>→</span></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 RORJAN Saudi Arabia. All Rights Reserved.</p>
     </footer>
 
+    <!-- JavaScript for Interactivity -->
+    <script>
+        let cartCount = 0;
+        function addToCart(productName, price) {
+            cartCount++;
+            document.getElementById('cart-count').innerText = cartCount;
+            alert(productName + ' (' + price + ' SAR) has been added to your RORJAN cart!');
+        }
+
+        function handleSubscribe(e) {
+            e.preventDefault();
+            const email = document.getElementById('user-email').value;
+            if(email) {
+                document.getElementById('sub-success').style.display = 'block';
+                document.getElementById('user-email').value = '';
+            }
+        }
+    </script>
 </body>
 </html>
-
