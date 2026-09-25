@@ -1,173 +1,158 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RORJAN | روزان - Luxury Fashion Saudi Arabia</title>
+    <title>RORJAN — Haute Couture & Luxury Living</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Sticky Header (Scroll par sirf Golden Center Logo reh jayega) -->
-    <header class="navbar" id="navbar">
-        <div class="nav-links-left" id="nav-options">
-            <a href="#home">HOME</a>
-            <a href="#categories">COLLECTIONS</a>
-            <a href="#shop">SHOP</a>
+    <!-- Elite Sticky Header -->
+    <header class="luxury-navbar" id="navbar">
+        <div class="nav-side left-links" id="nav-left">
+            <a href="#collection">COLLECTION</a>
+            <a href="#atelier">ATELIER</a>
         </div>
-        <div class="logo-center">RORJAN</div>
-        <div class="nav-icons-right" id="nav-options-right">
-            <a href="#contact">CONTACT</a>
-            <a href="#" id="cart-icon">🛒 <span id="cart-count">0</span></a>
+        <div class="luxury-logo" id="main-logo">RORJAN</div>
+        <div class="nav-side right-links" id="nav-right">
+            <a href="#heritage">HERITAGE</a>
+            <a href="#cart" class="cart-trigger">BAG (<span id="bag-count">0</span>)</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <div class="hero-bg-brand">RORJAN</div>
-        <div class="hero-container">
-            <div class="hero-content">
-                <span class="sub-tag">SAUDI LUXURY COLLECTION 2026</span>
-                <h1>MODERN ELEGANCE</h1>
-                <p>Tailored for those who define absolute luxury.</p>
-                <a href="#shop" class="shop-btn">EXPLORE NOW</a>
+    <!-- Cinematic Hero Section -->
+    <section class="hero-cinematic">
+        <div class="hero-bg-text">RORJAN</div>
+        <div class="hero-grid">
+            <div class="hero-text-col">
+                <span class="season-tag">AUTUMN / WINTER 2026</span>
+                <h1>THE MONARCHY OF STYLE</h1>
+                <p>Architectural silhouettes crafted from supreme cashmere, silk, and bespoke brown elements.</p>
+                <a href="#collection" class="luxury-btn">DISCOVER THE EDIT</a>
             </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80" alt="Rorjan Model">
-            </div>
-        </div>
-    </section>
-
-    <!-- Alternating Left & Right Categories Section -->
-    <section id="categories" class="categories-section">
-        <div class="section-title">
-            <h3>— CURATED COLLECTIONS —</h3>
-            <h2>Shop by Category</h2>
-        </div>
-
-        <!-- Category 1: Image Left, Text Right -->
-        <div class="cat-row">
-            <div class="cat-img zoom-effect">
-                <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80" alt="Women Abayas">
-            </div>
-            <div class="cat-info">
-                <h3>Women Abayas & Wear</h3>
-                <p>Breathtaking modest couture crafted with premium brown and white fabrics for elite elegance.</p>
-                <a href="#shop" class="cat-link">View Collection →</a>
-            </div>
-        </div>
-
-        <!-- Category 2: Text Left, Image Right -->
-        <div class="cat-row reverse">
-            <div class="cat-info">
-                <h3>Men's Elite Collection</h3>
-                <p>Sophisticated tailoring and executive wear curated to offer absolute distinction.</p>
-                <a href="#shop" class="cat-link">View Collection →</a>
-            </div>
-            <div class="cat-img zoom-effect">
-                <img src="https://images.unsplash.com/photo-1617137984095-74e4e5e3613f?auto=format&fit=crop&w=800&q=80" alt="Men Wear">
-            </div>
-        </div>
-
-        <!-- Category 3: Image Left, Text Right -->
-        <div class="cat-row">
-            <div class="cat-img zoom-effect">
-                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Accessories">
-            </div>
-            <div class="cat-info">
-                <h3>Luxury Accessories & Oud</h3>
-                <p>Signature oriental perfumes and statement pieces completing your luxury look.</p>
-                <a href="#shop" class="cat-link">View Collection →</a>
-            </div>
-        </div>
-
-        <!-- Category 4: Text Left, Image Right -->
-        <div class="cat-row reverse">
-            <div class="cat-info">
-                <h3>Designer Footwear</h3>
-                <p>Handcrafted heels and classic executive shoes designed for ultimate poise.</p>
-                <a href="#shop" class="cat-link">View Collection →</a>
-            </div>
-            <div class="cat-img zoom-effect">
-                <img src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=800&q=80" alt="Footwear">
+            <div class="hero-img-col zoom-box">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=80" alt="Rorjan Haute Couture">
             </div>
         </div>
     </section>
 
-    <!-- Shop / Products Section (Brown & White Theme) -->
-    <section id="shop" class="shop-section">
-        <div class="section-title">
-            <h3>— FEATURED ITEMS —</h3>
-            <h2>Trending Products</h2>
+    <!-- Alternating Elite Collections -->
+    <section id="collection" class="edit-section">
+        <div class="header-block">
+            <h3>CURATED MASTERPIECES</h3>
+            <h2>The Signature Edit</h2>
         </div>
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="prod-img zoom-effect">
-                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=500&q=80" alt="Product">
+
+        <!-- Row 1: Image Left, Text Right -->
+        <div class="edit-row">
+            <div class="edit-media zoom-box">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=900&q=80" alt="Silk Abaya">
+            </div>
+            <div class="edit-details">
+                <span class="row-num">01 / COUTURE</span>
+                <h3>Sovereign Silk Abayas</h3>
+                <p>Flowing architectural drapes infused with hand-stitched golden embroidery over deep espresso brown tones.</p>
+                <a href="#shop" class="explore-link">Explore Piece &rarr;</a>
+            </div>
+        </div>
+
+        <!-- Row 2: Text Left, Image Right -->
+        <div class="edit-row reverse">
+            <div class="edit-details">
+                <span class="row-num">02 / TAILORING</span>
+                <h3>Executive Cashmere Overcoats</h3>
+                <p>Uncompromising craftsmanship tailored for the modern elite, offering unmatched warmth and prestige.</p>
+                <a href="#shop" class="explore-link">Explore Piece &rarr;</a>
+            </div>
+            <div class="edit-media zoom-box">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=900&q=80" alt="Cashmere Coat">
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimalist Product Showroom (Brown & White) -->
+    <section id="shop" class="showroom-section">
+        <div class="header-block">
+            <h3>LIMITED RELEASES</h3>
+            <h2>Exquisite Arrivals</h2>
+        </div>
+        <div class="showroom-grid">
+            <div class="showroom-card">
+                <div class="card-img zoom-box">
+                    <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80" alt="Product">
                 </div>
-                <h4>Royal Embroidered Abaya</h4>
-                <p class="price">750 SAR</p>
-                <button class="add-cart-btn" onclick="addToCart('Royal Embroidered Abaya', 750)">Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <div class="prod-img zoom-effect">
-                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=500&q=80" alt="Product">
+                <div class="card-desc">
+                    <h4>The Royal Velvet Ensemble</h4>
+                    <span class="item-price">1,450 SAR</span>
+                    <button class="minimal-btn" onclick="addItem('The Royal Velvet Ensemble')">ACQUIRE</button>
                 </div>
-                <h4>Signature Royal Oud</h4>
-                <p class="price">490 SAR</p>
-                <button class="add-cart-btn" onclick="addToCart('Signature Royal Oud', 490)">Add to Cart</button>
+            </div>
+            <div class="showroom-card">
+                <div class="card-img zoom-box">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=600&q=80" alt="Product">
+                </div>
+                <div class="card-desc">
+                    <h4>Heritage Gold-Thread Cloak</h4>
+                    <span class="item-price">2,100 SAR</span>
+                    <button class="minimal-btn" onclick="addItem('Heritage Gold-Thread Cloak')">ACQUIRE</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer & Payment Gateways -->
-    <footer id="contact">
-        <div class="footer-content">
-            <h4>RORJAN KSA</h4>
-            <p>Email: support@rorjan.com</p>
-            <div class="payment-logos">
-                <span>Visa</span>
-                <span>Mastercard</span>
-                <span>Apple Pay</span>
-                <span>Mada</span>
-                <span>Tabby</span>
-                <span>Tamara</span>
-                <span>PayPal</span>
+    <!-- Elite Footer with Payment Gateways -->
+    <footer class="luxury-footer">
+        <div class="footer-inner">
+            <div class="brand-col">
+                <h3>RORJAN</h3>
+                <p>Riyadh, Kingdom of Saudi Arabia</p>
+            </div>
+            <div class="gateway-col">
+                <p class="gateway-title">SECURE TRANSACTIONS</p>
+                <div class="gateway-badges">
+                    <span>VISA</span>
+                    <span>MASTERCARD</span>
+                    <span>APPLE PAY</span>
+                    <span>MADA</span>
+                    <span>TABBY</span>
+                    <span>TAMARA</span>
+                </div>
             </div>
         </div>
-        <p class="copy">&copy; 2026 RORJAN Saudi Arabia. All Rights Reserved.</p>
+        <div class="sub-footer">
+            <p>&copy; 2026 RORJAN Haute Couture. All Rights Reserved.</p>
+        </div>
     </footer>
 
-    <!-- JavaScript for Scroll & Cart -->
+    <!-- Interactive Script -->
     <script>
-        // Scroll par options hide aur center golden logo ke liye
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', () => {
             const navbar = document.getElementById('navbar');
-            const leftOpts = document.getElementById('nav-options');
-            const rightOpts = document.getElementById('nav-options-right');
+            const leftNav = document.getElementById('nav-left');
+            const rightNav = document.getElementById('nav-right');
             
-            if (window.scrollY > 50) {
-                leftOpts.style.opacity = '0';
-                leftOpts.style.pointerEvents = 'none';
-                rightOpts.style.opacity = '0';
-                rightOpts.style.pointerEvents = 'none';
-                navbar.classList.add('scrolled');
+            if (window.scrollY > 40) {
+                leftNav.style.opacity = '0';
+                leftNav.style.visibility = 'hidden';
+                rightNav.style.opacity = '0';
+                rightNav.style.visibility = 'hidden';
+                navbar.classList.add('glass-scrolled');
             } else {
-                leftOpts.style.opacity = '1';
-                leftOpts.style.pointerEvents = 'auto';
-                rightOpts.style.opacity = '1';
-                rightOpts.style.pointerEvents = 'auto';
-                navbar.classList.remove('scrolled');
+                leftNav.style.opacity = '1';
+                leftNav.style.visibility = 'visible';
+                rightNav.style.opacity = '1';
+                rightNav.style.visibility = 'visible';
+                navbar.classList.remove('glass-scrolled');
             }
         });
 
-        // Add to cart counter logic
-        let cartCount = 0;
-        function addToCart(name, price) {
-            cartCount++;
-            document.getElementById('cart-count').innerText = cartCount;
-            alert(name + ' (' + price + ' SAR) cart mein add ho gaya hai!');
+        let count = 0;
+        function addItem(name) {
+            count++;
+            document.getElementById('bag-count').innerText = count;
+            alert('"${name}" has been added to your shopping bag.');
         }
     </script>
 </body>
